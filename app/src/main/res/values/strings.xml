@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="Textee">Херсон</string>
+    <string name="n_n_19_n_22">ПН\nЯсно\n+19\n+22</string>
+    <string name="n_n_19_n_20">ВТ\nЯсно\n+19\n+20</string>
+    <string name="n_n_22_n_19">СР\nТуман\n+22\n+19</string>
+    <string name="n_n_13_n_15">ЧТ\nГроза\n+13\n+15</string>
+    <string name="n_n_17_n_22">ПТ\nЯсно\n+17\n+22</string>
+    <string name="n_n_20_n_22">СБ\nГуд\n+20\n+22</string>
+    <string name="n_n_20_n_22444">ВС\nГуд\n+20\n+22</string>
+    <string name="_19">+19</string>
+    <string name="_23">+23</string>
+    <string name="n_n_65_n_n_7">Переменная облачность\n\nВлажность: 65%\n\nВетер: 7 км/час</string>
 </resources>
