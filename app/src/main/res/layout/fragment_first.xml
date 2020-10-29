@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/back"
-    tools:context=".FirstFragment">
+
+    tools:context=".Fragment_weather">
+<!--android:background="@drawable/back"-->
 
     <ToggleButton
         android:id="@+id/toggle"
@@ -14,16 +14,17 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="0dp"
         android:drawableStart="@drawable/selector"
-        android:textOff="@string/off"
-        android:textOn="@string/on"
+        android:textOff="Dark theme"
+        android:textOn="Light theme"
         tools:ignore="RelativeOverlap" />
 
     <ImageView
+        android:id="@+id/MyBackground"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/ImageView"
-        android:layout_marginTop="20dp"
-        />
+        android:layout_alignParentTop="true"
+        android:background="@color/cardview_dark_background"
+        android:layout_marginTop="0dp" />
 
 
     <TextView
@@ -32,9 +33,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
 
-        android:layout_marginStart="23dp"
+        android:layout_marginStart="0dp"
         android:layout_marginTop="-1dp"
-        android:background="@color/myColor3"
+        android:background="#5B838080"
         android:text="@string/Textee"
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -46,8 +47,8 @@
         android:layout_height="92dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="338dp"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="346dp"
         android:background="@color/myColor3" />
 
     <TextView
@@ -56,7 +57,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="0dp"
-        android:layout_marginBottom="311dp"
+        android:layout_marginBottom="160sp"
         android:text="@string/n_n_19_n_22"
         android:textAlignment="center" />
 
@@ -67,7 +68,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="58dp"
-        android:layout_marginBottom="311dp"
+        android:layout_marginBottom="160sp"
         android:text="@string/n_n_19_n_20"
         android:textAlignment="center" />
 
@@ -76,7 +77,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="110dp"
-        android:layout_marginBottom="311dp"
+        android:layout_marginBottom="160sp"
         android:text="@string/n_n_22_n_19"
         android:textAlignment="center" />
 
@@ -86,7 +87,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="166dp"
-        android:layout_marginBottom="311dp"
+        android:layout_marginBottom="160sp"
         android:text="@string/n_n_13_n_15"
         android:textAlignment="center" />
 
@@ -96,7 +97,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="224dp"
-        android:layout_marginBottom="311dp"
+        android:layout_marginBottom="160sp"
         android:text="@string/n_n_17_n_22"
         android:textAlignment="center" />
 
@@ -106,7 +107,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="280dp"
-        android:layout_marginBottom="311dp"
+        android:layout_marginBottom="160sp"
         android:text="@string/n_n_20_n_22"
         android:textAlignment="center" />
 
@@ -116,7 +117,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="338dp"
-        android:layout_marginBottom="311dp"
+        android:layout_marginBottom="160sp"
         android:text="@string/n_n_20_n_22444"
         android:textAlignment="center" />
 
@@ -160,20 +161,6 @@
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="30sp" />
-
-    <Button
-        android:id="@+id/buttonPanel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="156dp"
-        android:layout_marginTop="516dp"
-        android:text="@string/next"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/buttonPanel" />
 
 </RelativeLayout>
 

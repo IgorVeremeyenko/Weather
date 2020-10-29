@@ -1,34 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:id="@+id/drawer">
 
-    tools:context=".MainActivity">
-
-    <ToggleButton
+    <include
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textOff="@string/off"
-        android:textOn="@string/on"
-        android:id="@+id/toggle"
-        android:drawableStart="@drawable/selector"
-        android:layout_marginTop="0dp"
+        layout="@layout/toolbar"
         />
-
-    <TextView
-        android:layout_width="165dp"
-        android:layout_height="124dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="116dp"
-        android:layout_marginTop="323dp"
-        android:text="@string/hello_world"
-        android:textColor="@color/white"
-        android:textSize="@dimen/material_emphasis_medium" />
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view"
+        app:menu="@menu/activity_main_drawer"
+        app:headerLayout="@layout/header"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"/>
 
 
-</RelativeLayout>
+    <fragment
+        android:id="@+id/fr_place"
+        android:name="com.example.myapplication.Fragment_weather"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
 
