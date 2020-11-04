@@ -38,4 +38,9 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="menu">Главное меню</string>
+    <string name="city_name">введите город</string>
+    <string name="go">go</string>
+    <string name="current_by_city">cur_city</string>
+    <string name="hours_by_city">hours</string>
+    <string name="days_by_city">days</string>
 </resources>
